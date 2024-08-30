@@ -2,7 +2,7 @@
 Books Bazaar is a user-friendly platform designed for buying and selling books. This project is built with HTML, CSS, and JavaScript, and allows users to purchase new and second-hand books, including textbooks, novels, and stationery items. The site is designed to offer affordable options for students by enabling them to sell their used books.
 
 Project Structure
-index.html: The main HTML file that serves as the entry point of the website.
+index.html: The main HTML file that serves as the entry point of the website
 style.css: The CSS file that contains all the styles for the website.
 script.js: The JavaScript file that handles the interactivity of the site.
 How to Run This Project

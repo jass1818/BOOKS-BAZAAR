@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --main-color: #6b7280;
+  --other-color: #334155;
+  --big-font: 4.3rem;
+  --h2-font: 2.2rem;
+  --p-font: 1rem;
+
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.navbar {
+  background-color: rgb(219, 248, 183);
+}
+
+
+.navbar-brand {
+  font-weight: 500;
+  color: black;
+  font-size: 24px;
+  transition: 0.3s red;
+}
+
+.navbar-brand i {
+  padding-right: 40px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  height: 10px;
+  width: 10px;
+  background: rgb(219, 248, 183);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--other-color);
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 8px;
+  transition: all .45s ease;
+}
+
+.icons i:hover {
+  transform: scale(0.9);
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+  /* padding: 0 10px  0  10px; */
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  transition: 0.3s background-color;
+}
+
+.icons a:hover {
+  background-color: rgb(219, 248, 183);
+
+}
+
+.logo i {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: bolder;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #006ad4;
+}
+
+@media(min-width: 991px) {
+  .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #92fe84;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
+  }
+}
+
+
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-info p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-info span{
+  padding: 0 5px;
+}
+
+.contact-info li:hover i {
+  color: #666;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #444;
+}
+
+.contact-form button[type="submit"]:active {
+  background-color: #555;
+  transform: translateY(2px);
+}
+
+
+

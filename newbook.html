@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book bazaar</title>
+    <link rel="stylesheet" href="newbook.css">
+    <!--remixicon link for icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--boxicons link for icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--google fonts 3 links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--header file starts here-->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><a href="appear.html"><i class="ri-book-open-line"></i></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="appear.html" class="link home">HOME</a></li>
+                    <li><a href="about.html" class="link">ABOUT</a></li>
+                    <li><a href="shop.html" class="link">SHOP</a></li>
+                    <li><a href="contacts.html" class="link">CONTACT</a></li>
+                </ul>
+            </div>
+            <input type="search" class="search-bar" placeholder="Search Item Here...">
+            <div class="cart"><i class="ri-shopping-cart-2-line"></i></div>
+        </div>
+    </header>
+    <!--header file ends here-->
+
+    <!-- shopping page content starts here -->
+    <div class="sidebar-menu">
+        <div>
+            <div class="sidebar">
+                <h2>BOOKS BAZAAR</h2>
+                <h4 class="filters">Filters...</h4>
+                <div class="brands">
+                    <div>
+                        <h4>Brand</h4>
+                    </div>
+                    <div>
+                        <ul class="Brand">
+                            <li>
+                                <input type="checkbox" class="types" value="Cello">
+                                <label for="brand" class="color">Cello</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types" value="rylonds">
+                                <label for="brand" class="color">Rylonds</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types" value="classmate">
+                                <label for="brand" class="color">Classmate</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types" value="parker">
+                                <label for="brand" class="color">Parker</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types" value="doms">
+                                <label for="brand" class="color">Doms</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brands">
+                    <div>
+                        <h4>Price</h4>
+                    </div>
+                    <div>
+                        <ul class="Brand">
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">Below Rs. 100</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">Rs 101 to Rs. 200</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">Rs. 201 to Rs. 300</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">Rs. 301 to 400</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">Rs. 401 to 500</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="brands">
+                    <div>
+                        <h4>Discount Range</h4>
+                    </div>
+                    <div>
+                        <ul class="Brand">
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">20% and above</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">30% and above</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">40% and above</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">50% and above</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="types">
+                                <label for="brand" class="color">60% and above</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-products">
+            <h2>PICK YOU FAVOURITE PRODUCT FROM BELOW</h2>
+            <div class="products">
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/economics in one lesson.jpeg" alt="">
+                    </div>
+                    <h3>Charlie Hustle</h3>
+                    <h4>The RISE and FALL of PETE ROSE</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 350</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+
+
+                </div>
+
+                <div class="box" data-brand="Cello" >
+                    <div class="box-img">
+                        <img src="images/dune.jpeg" alt="">
+                    </div>
+                    <h3>THE LONG RUN</h3>
+                    <h4>A creative induiry</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 500</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                        
+                    </div>
+
+                </div>
+
+                <div class="box" data-brand="parker">
+                    <div class="box-img">
+                        <img src="images/forex trading.jpeg" alt="">
+                    </div>
+                    <h3>Parker ball point pen</h3>
+                    <h4>New Desing 2024</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">200RS.</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+
+
+                </div>
+
+                <div class="box" data-brand="parker">
+                    <div class="box-img">
+                        <img src="images/physics.jpeg" alt="">
+                    </div>
+                    <h3>Cello Ball point pen</h3>
+                    <h4>Ball pen</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 10</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/good economics for hard times.jpeg" alt="">
+                    </div>
+                    <h3>Classmate</h3>
+                    <h4>plain sheet notebook</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 50</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+
+
+                </div>
+
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/all in one english core.jpeg" alt="">
+                    </div>
+                    <h3>DOMS</h3>
+                    <h4>Single lined notebook</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 200</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+
+
+                </div>
+
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/gernal knowledge.jpg" alt="">
+                    </div>
+                    <h3>Mathematics</h3>
+                    <h4>CBSE 10th class book</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 350</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+
+
+                </div>
+
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/maths cbse class10.jpeg" alt="">
+                    </div>
+                    <h3>Full Marks Hindi guide</h3>
+                    <h4>previous year hundi guide 6th class</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 500</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/fire dance.jpeg" alt="">
+                    </div>
+                    <h3>Full Marks Hindi guide</h3>
+                    <h4>previous year hundi guide 6th class</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 500</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/maths 11th.jpeg" alt="">
+                    </div>
+                    <h3>Full Marks Hindi guide</h3>
+                    <h4>previous year hundi guide 6th class</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 500</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="box" data-brand="Cello">
+                    <div class="box-img">
+                        <img src="images/rich dad poor dad.jpeg" alt="">
+                    </div>
+                    <h3>Full Marks Hindi guide</h3>
+                    <h4>previous year hundi guide 6th class</h4>
+                    <div class="inbox">
+                        <div class="price">
+                            <a href="#" class="price">Rs. 500</a>
+                        </div>
+                        <button class="cart-btn" onclick="cartBtn()">Add to cart</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- shopping page content ends here -->
+        <script src="newbook.js"></script>
+</body>
+
+</html>
